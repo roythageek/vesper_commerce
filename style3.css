@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  position: absolute;
+  font-family: "Oswald", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  background-color: white;
+  color: black;
+  width: 100%;
+  min-height: 10vh;
+  position: fixed;
+  top: 0;
+  margin-top: 0px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+  margin-top: 0px;
+  z-index: 1;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover /*,.offcanvas a:focus*/ {
+  color: #dc0c0c;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px !important;
+  margin-left: 50px;
+  z-index: 1;
+}
+.head-btn {
+  width: 100px;
+  padding: 7px;
+  background-color: rgb(172, 15, 15);
+  color: white;
+  border: 2px solid rgb(172, 15, 15);
+  border-radius: 5px;
+}
+#hero-section {
+  margin: 150px auto;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: -1;
+}
+.hero-text {
+  height: 30vh;
+  padding: 20px;
+  font-family: "Playfair Display", serif;
+  line-height: 30px;
+}
+.big-text {
+  font-size: 50px;
+  font-family: "DM Serif Display", serif;
+  margin-bottom: 20px;
+}
+.hero-text button {
+  width: 150px;
+  height: 40px;
+  border: 2px solid black;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  margin-top: 20px;
+}
+.hero-image {
+  margin-top: -100px;
+}
+.icon1 {
+  height: 60px;
+  position: absolute;
+  top: 300px;
+  left: 750px;
+  transform: rotate(90deg);
+  z-index: -1;
+}
+.icon2 {
+  height: 70px;
+  position: absolute;
+  top: 120px;
+  left: 200px;
+  transform: rotate(390deg);
+  z-index: -1;
+}
+.icon3 {
+  height: 70px;
+  position: absolute;
+  top: 400px;
+  left: 1000px;
+  z-index: -1;
+}
+.icon4 {
+  height: 70px;
+  position: absolute;
+  top: 500px;
+  left: 200px;
+  z-index: -1;
+}
+.icon4 {
+  height: 70px;
+  position: absolute;
+  top: 500px;
+  left: 200px;
+  z-index: -1;
+}
+.icon6 {
+  height: 50px;
+  position: absolute;
+  top: 100px;
+  right: 300px;
+  z-index: -1;
+}
+.icon7 {
+  height: 40px;
+  position: absolute;
+  top: 200px;
+  right: 100px;
+  z-index: -1;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 600px) {
+  header {
+    gap: 40px;
+    left: -67px;
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 85%;
+  }
+  .sidenav {
+    z-index: 2;
+  }
+  .big-text {
+    font-size: 30px;
+    font-family: "DM Serif Display", serif;
+    position: absolute;
+    left: 250px;
+    margin-bottom: 400px;
+    top: -20px;
+  }
+  .hero-text {
+    width: 800px;
+    padding: 10px;
+    font-family: "Playfair Display", serif;
+    position: absolute;
+    top: 620px;
+    left: -200px;
+    z-index: -1;
+  }
+  .hero-image {
+    margin-top: -150px;
+    margin-left: -20px;
+    height: 200px;
+  }
+  .icon1 {
+    height: 70px;
+    position: absolute;
+    top: 830px;
+    left: 280px;
+    transform: rotate(90deg);
+    z-index: -1;
+  }
+  .icon5 {
+    height: 370px;
+    position: absolute;
+    top: 200px;
+    left: 25px;
+    z-index: -1;
+  }
+  .icon2 {
+    height: 40px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    transform: rotate(330deg);
+    z-index: -1;
+  }
+  .icon3 {
+    height: 40px;
+    position: absolute;
+    top: 530px;
+    left: 15px;
+    z-index: 0;
+  }
+  .icon4 {
+    height: 30px;
+    position: absolute;
+    top: 500px;
+    left: 200px;
+    z-index: -1;
+  }
+  .icon6 {
+    height: 20px;
+    position: absolute;
+    left: 350px;
+    top: 170px;
+  }
+  .icon7 {
+    position: absolute;
+    top: 550px;
+    height: 30px;
+  }
+  .arrivals-text {
+    text-align: center;
+    margin-top: 850px;
+    margin-right: 50px;
+    overflow-x: hidden;
+  }
+  #new-features {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 20px;
+    gap: 20px;
+    overflow-x: hidden;
+  }
+  .add-to-cart-btn {
+    padding: 7px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 150px;
+  }
+  .view-details-btn {
+    padding: 7px;
+    border: 2px solid rgb(172, 15, 15);
+    background-color: rgb(172, 15, 15);
+    color: white;
+    border-radius: 5px;
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  #collection1 {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.9), rgb(0, 0, 0, 0.1)),
+      url(images/pexels-niko-rach-2933265.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    color: white;
+    z-index: -2;
+  }
+  .collection-container {
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-left: 10px;
+    width: 80%;
+  }
+  .collection-container h3{
+    font-size:40px;
+    padding-bottom:10px;
+  }
+  .explore-btn {
+    padding: 10px;
+    border: 2px solid rgb(172, 15, 15);
+    background-color: rgb(172, 15, 15);
+    color: white;
+    width: 180px;
+    border-radius: 5px;
+    margin-top: 80px;
+    margin-left:15px;
+  }
+  #collection2 {
+    margin-top: 10px;
+    position: relative;
+  }
+  .collection2-icon {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+  }
+  .collection2-icon1 {
+    position: absolute;
+    left: 30px;
+    top: 500px;
+    z-index: -1;
+  }
+  .collection2-icon2 {
+    position: absolute;
+    top: 0px;
+    right: -80px;
+  }
+  .collection2-icon3 {
+    position: absolute;
+    top: 300px;
+    left: 40px;
+  }
+  .collection2-icon4 {
+    position: absolute;
+    top: 850px;
+    left: 250px;
+  }
+  #collection3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 3), rgba(0, 0, 0, 0.1)),
+      url(images/pexels-wallace-chuck-13980567.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    opacity: 0.8;
+    color: white;
+    z-index: -2;
+    margin-top: 1000px;
+  }
+  .collection3-container {
+    width: 300px;
+    display: block;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 80px;
+  }
+  .collection3-container p {
+    padding-top: 80px;
+    padding-left: 20px;
+  }
+  .collection3-container h1 {
+    padding-top: 40px;
+    padding-left: 20px;
+    font-size: 40px;
+  }
+  .collection3-container h3 {
+    padding-left: 20px;
+  }
+  .rounded-class {
+    width: 150px;
+    height: 150px;
+    border: 4px solid white;
+    border-radius: 50%;
+    margin: 50px 0px 0px 20px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  .rounded-class p {
+    font-size: 20px;
+  }
+  .city-bikes-button {
+    width: 180px;
+    height: 40px;
+    padding: 5px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    margin: 90px 0px 0px 30px;
+    font-size: 20px;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    overflow: hidden;
+    border-radius:5px;
+  }
+
+  .city-bikes-button::before {
+    content: "Explore Now";
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 100px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: 1;
+    background-color: transparent;
+    color: rgb(255, 253, 253);
+  }
+
+  .city-bikes-button:hover {
+    color: #ffffff;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(250, 250, 250, 0.4);
+  }
+}
